@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function Accumulator(startingValue){
+            this.value = startingValue;
+            this.read = function(){
+                this.value += +prompt('Сколько нужно добавить?', 0);
+            };
+        }
+        let accamulator = new Accumulator(10);
+        accamulator.read();
+        accamulator.read();
+        alert(accamulator.value);
+    </script>
+</body>
+</html>

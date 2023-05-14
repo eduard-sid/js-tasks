@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function Calcul() {
+            this.read = function() {
+                this.a = +prompt('Задайте значение А', 0);
+                this.b = +prompt('Задайте значение Б', 0);
+            };
+            this.sum = function(){
+                return this.a + this.b;
+            };
+            this.mul = function(){
+                return this.a * this.b;
+            };
+        }
+        let Calculator = new Calcul();
+        Calculator.read();
+        alert("Сумма=" + Calculator.sum());
+        alert("Произведение=" + Calculator.mul());
+
+    </script>
+</body>
+</html>
